@@ -1,0 +1,119 @@
+.quiz-main-container {
+    background-color: #020931;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    width: 60%;
+    padding: 40px;
+    background: linear-gradient(135deg, #05031a, #040121);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.quiz-title {
+    color: #6f6b6bbb;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.quiz-form {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+select, input {
+    width: 100%;
+    padding: 12px;
+    color: rgba(210, 219, 219, 0.589);
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+select:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+select:focus, input:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+
+.submit-button {
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #1a9def;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+    transform: scale(1.03);
+}
+
+.quiz-container h1 {
+    color: azure;
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .quiz-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quiz-title, .quiz-container h1 {
+        font-size: 28px;
+    }
+
+    .submit-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .quiz-container {
+        padding: 15px;
+    }
+
+    .quiz-title, .quiz-container h1 {
+        font-size: 24px;
+    }
+
+    select, input {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        padding: 10px 15px;
+    }
+}
